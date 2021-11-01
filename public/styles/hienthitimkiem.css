@@ -1,108 +1,142 @@
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.button{
+    margin-right: 0px;
+}
+.pagination ul{text-align: center;margin-top: 30px}
 .products{
-    height: 344px;
+	display: block;
+	height: 378px;
+	margin-bottom: 30px;
+	padding: 0 10px ;
+	border-color: #000000;	
 }
-.filter-heading{
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: center; 
+.products .pro-img {
+	max-width: 100%;
+	height: auto;
+	transition: all 0.3s ease-in-out;	
+	position: relative;
+	display: block;
+	top: 0;
+	left: 0;
+	-webkit-transition: all 4s ease;
+	-moz-transition: all 4s ease;
+	-o-transition: all 4s ease;
+	-ms-transition: all 4s ease;
+	transition: all 4s ease;
 }
-.filter-select{
-    font-size: 13px;
-    font-weight: 600;
-    text-transform: uppercase;
-    word-spacing: 2px;
+.pro-detail{
+	text-align: center;
+	padding: 20px 0px;
 }
-.filter-brands{
-    padding: 10px 0px;
+.pro-detail h3{
+	text-transform: uppercase;
+	margin: 0 0 5px;
+	font-size:14px;
+	position: relative;
 }
-.filter-brands ul{
-    display: block;
-    padding: 0;
-    margin-top: 15px;
-    margin-bottom: 5px;
+p.pro-price{
+	line-height: 1.4;
+	font-size: 14px;
+	font-weight: 700;
 }
-.filter-brands ul li{
-    list-style:none;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 400;
+p.pro-price.sale{
+	color: #FF0004;
 }
-.filter-price{
-    padding-bottom: 10px;
+.pro-price-retail{
+	color: #222222;
+	font-size: 13px;
+	margin-left: 5px;
+	font-weight: 500;
 }
-.filter-price ul li{
-    font-size: 12px;
-    font-weight: 400;
+
+.pro-list a {position: relative;border: #000000;}
+
+.pro-list a .btn-xem {
+	position: absolute;
+	bottom: 0px;
 }
-.filter-price ul{
-    display: block;
-    margin-top: 15px;
-    padding: 0;
-    margin-bottom: 5px;
+
+.products .pro-img:hover {
+	transform: scale(1.1);
+	opacity: 0.8;
 }
-.filter-size{
-    padding-bottom: 10px;
-}
-.filter-size{
-    margin-bottom: 15px;
-}
-.filter-size ul{
-    list-style:none;
-    padding: 0;
-    margin-top: 15px;
-    height: 70px;
-}
-.filter-size li{
-    float: left;
-}
-.filter-size input[type="checkbox"] {
-    display: none;
-}
-.filter-size li input[type="checkbox"]:checked + label{
-    background-color: #000000;
-    color: #FFFFFF;
-    border: 1px solid #c3c3c3;
-}
-.filter-size li label {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    position: relative;
-    border: 1px solid #e5e5e5;   
-    font-size: 11px;
-    font-weight: 400;
-    text-align: center;
-    cursor: pointer;
-}
-.filter-control{
-    cursor: pointer;   
-}
-.direction{
-    margin: 0px 20px;
-    opacity: 0.4;
-}
-.page-num{
-    opacity: 0.4;
-    margin: 0px 10px;
-}
-.direction:hover, .page-num:hover{
-    opacity: 1;
-}
-.current{
-    opacity: 1;
-}
-.direction-bar{
-    margin: 30px 0px;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 600;
-}
-.form-check-input:checked {
+
+
+.btn-xem{
 	background-color: #000000;
-	border-color: #000000;
-	box-shadow: 0px 0px 100px 0.2px #666666;
+	color: #fff;
+	height: 40px;
+	width: 100px;
+	right: 140%;
 }
-.form-check-input:focus {
-	border-color: #666666;
-	box-shadow: 0px 0px 50px 2px #666666;
+
+.btn-them{
+	background-color: #FF0004;
+	color : #fff;
+	height: 40px;
+	width: 100px;
+	
+}
+
+/*Hover effect*/
+*{margin: 0; padding: 0;}
+        ul{list-style: none;}
+        #wapper{
+            display: flex;
+            justify-content: center;
+        }
+        ul.pro-list{
+        display: flex;    
+        }
+        ul.pro-list li{
+        max-width: 524px;    
+        }
+        ul.pro-list li a img{
+        max-width: 100%; 
+        transform: all 0.3s ease-in-out;   
+        display: block;
+        }
+        ul.pro-list li:hover img{
+        transform: scale(1.1);
+        opacity: 0.8;
+        }
+        ul.pro-list li a{
+            position: relative;
+            display: block;
+        }
+        ul.pro-list li a .hienthi{
+            position: absolute;
+            bottom: 0px;
+            color: #333;
+            left:75%;
+            transform: translateX(-50%);
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+        }
+
+        ul.pro-list li a:hover .hienthi{
+            bottom: 5%;
+            opacity: 1;
+        }
+/**/
+
+.banner-img{height: 450px;;width: 100%;}
+.logo-sale{height: 60px;width: 60px;}
+.sale-banner{
+height: 300px;
+text-align: center;
+background-color: #000000;
+}
+
+@media only screen and (min-width:740px) and (max-width:1023px){
+    .table{display: block;}
+}
+/*Mobile*/
+@media only screen and (max-width:739px){
+    .mobile{display: block;}
 }

@@ -1,7 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 /* content */
-
+.slide{
+	height: 500px;
+}
 #xemthem{
 	height: 100px;
 	

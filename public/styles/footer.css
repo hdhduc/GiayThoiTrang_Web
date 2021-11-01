@@ -94,8 +94,6 @@ footer p {
     /* Make sure it does not overlap */
     border: none;
     /* Remove borders */
-
-    cursor: pointer;
 }
 
 footer {margin-top: 80px;}
