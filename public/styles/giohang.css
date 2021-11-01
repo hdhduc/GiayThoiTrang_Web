@@ -11,7 +11,6 @@
 	width: 40%;
 }
 .cart-number{
-	text-align: center;
 	width: 35px;
 	border: 1px solid #F3F3F3;
 }
@@ -69,14 +68,4 @@ button{
 	text-transform: uppercase;
 	padding: 10px 5px;
 	text-align: center;
-}
-
-/* Giấu cái nhẹ */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	margin: 0;
-}
-input[type=number] {
-	-moz-appearance: textfield;
 }
